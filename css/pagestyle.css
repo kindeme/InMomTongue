@@ -1,0 +1,40 @@
+.hero {
+	height: 200px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.title {
+	letter-spacing: var(--letterSpacing);
+	text-transform: uppercase;
+	color: white;
+}
+.underContruction {
+	text-align: center;
+	font-size: 4rem;
+	color: var(--secondary-500);
+	background-color: var(--gray-100);
+	height: calc(100vh - 400px);
+}
+.hero-service {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+		url("../images/services-hero.jpg") center/cover no-repeat;
+}
+
+.hero-contact {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../images/contact-hero.jpg") center/cover no-repeat;
+}
+.hero-about {
+	background: url("../images/about-hero.jpg") center/cover no-repeat;
+}
+
+@media screen and (min-width: 800px) {
+	.hero {
+		height: 400px;
+	}
+	.title {
+		font-size: 5rem;
+	}
+}
