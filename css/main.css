@@ -121,16 +121,14 @@ Navbar
 	justify-content: space-between;
 	padding: 1rem;
 }
+
 .nav-toggle {
-	font-size: 1.7rem;
 	color: var(--primary-500);
-	border-color: transparent;
-	background-color: transparent;
 	transition: var(--transition);
 	cursor: pointer;
-}
-.nav-toggle:hover {
-	transform: rotate(90deg);
+	border-color: transparent;
+	background-color: transparent;
+	font-size: 1.7rem;
 }
 .logo {
 	margin-bottom: 0;
@@ -225,15 +223,15 @@ Section services
 
 .services-info {
 	background: linear-gradient(
-		rgba(251, 155, 89, 0.2),
-		rgba(73, 173, 103, 0.2)
+		rgba(251, 155, 89, 0.5),
+		rgba(73, 173, 103, 0.6)
 	);
 	text-align: center;
 	padding: 3rem 0.6rem;
 }
 
 .services-section {
-	box-shadow: var(--shadow-md);
+	box-shadow: var(--shadow-lg);
 	background-color: var(--gray-50);
 	border-radius: var(--borderRadius);
 }
@@ -244,7 +242,7 @@ Section services
 }
 .service {
 	border-bottom: 2px solid var(--gray-200);
-	padding: 0.6rem;
+	padding: 3rem 0.6rem;
 }
 .btn-service {
 	display: inline-block;
@@ -335,7 +333,15 @@ media query
 		border-radius: 5rem;
 	}
 	/* services section */
+	.services-section {
+		max-width: var(--max-width);
+		display: flex;
+		justify-content: space-between;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.service {
-		border: 2px solid var(--gray-200);
+		border-right: 1px solid var(--gray-200);
+		border-bottom: 0;
 	}
 }
