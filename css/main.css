@@ -194,6 +194,7 @@ header {
 .btn {
 	display: block;
 	color: white;
+	text-transform: uppercase;
 	background-color: var(--primary-500);
 	border-radius: var(--borderRadius);
 	padding: 0.5rem 2.1rem;
@@ -208,7 +209,7 @@ header {
 Section about
  =========================== */
 .section-center {
-	padding: 3rem 0.6rem;
+	padding: 3rem 0.8rem;
 }
 .about-info {
 	background-color: var(--gray-50);
@@ -242,7 +243,7 @@ Section services
 }
 .service {
 	border-bottom: 2px solid var(--gray-200);
-	padding: 3rem 0.6rem;
+	padding: 3rem 0.8rem;
 }
 .btn-service {
 	display: inline-block;
@@ -262,7 +263,16 @@ Section services
 .icon:hover {
 	transform: scale(1.2);
 }
-
+/* =========================== 
+expertise
+ =========================== */
+.expertise {
+	padding: 3rem 0.8rem;
+}
+.subtitle {
+	padding-top: 2rem;
+	margin-bottom: 0;
+}
 /* =========================== 
 footer
  =========================== */
@@ -343,5 +353,12 @@ media query
 	.service {
 		border-right: 1px solid var(--gray-200);
 		border-bottom: 0;
+	}
+	.expertise {
+		display: flex;
+		justify-content: center;
+		padding: 3rem 0;
+	}
+	.expert-info {
 	}
 }

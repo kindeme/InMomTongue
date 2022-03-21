@@ -3,6 +3,8 @@ const $ = (selector) => document.querySelector(selector);
 
 const navToggle = $(".nav-toggle");
 const links = $(".links");
+const icon = $("#icon");
+const date = $("#date");
 
 navToggle.addEventListener("click", () => {
 	links.classList.toggle("show-links");
@@ -14,3 +16,6 @@ navToggle.addEventListener("click", () => {
 		icon.classList.remove("fa-times");
 	}
 });
+
+const now = new Date();
+date.textContent = now.getFullYear();
