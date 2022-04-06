@@ -217,7 +217,9 @@ Section about
 .btn-conatct {
 	display: inline-block;
 }
-
+.contact-text p:last-of-type {
+	margin-bottom: 2rem;
+}
 /* =========================== 
 Section services
  =========================== */
@@ -267,6 +269,7 @@ Section services
 .bg-img {
 	display: none;
 }
+
 /* =========================== 
 expertise
  =========================== */
@@ -276,6 +279,10 @@ expertise
 .subtitle {
 	padding-top: 2rem;
 	margin-bottom: 0;
+	font-size: 1.2rem;
+}
+.text {
+	margin-bottom: 2rem;
 }
 /* =========================== 
 footer
@@ -381,6 +388,18 @@ media query
 	.expertise {
 		display: flex;
 		justify-content: center;
-		padding: 3rem 0;
+		align-items: center;
+		padding: 0;
+	}
+	.expertise img {
+		width: 50%;
+	}
+	.expert-info {
+		width: 50%;
+		padding-left: 7rem;
+	}
+	.text {
+		max-width: 500px;
+		margin-bottom: 3rem;
 	}
 }
