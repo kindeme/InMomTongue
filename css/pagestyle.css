@@ -1,21 +1,38 @@
 .hero {
-	height: 200px;
+	min-height: 200px;
 	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.title {
-	letter-spacing: var(--letterSpacing);
-	text-transform: uppercase;
 	color: white;
+}
+.hero-info {
+	margin-left: 3rem;
+	padding-top: 0.5rem;
+}
+.hero-info p {
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+}
+.page {
+	color: var(--gray-400);
+}
+.tilteDesign {
+	width: 40px;
+	height: 1px;
+	background-color: var(--gray-300);
+	display: inline-block;
+	margin-right: 0.3rem;
+}
+.pageLink {
+	color: var(--gray-200);
+}
+.pageTitle {
+	padding-left: 0.8rem;
 }
 .underContruction {
 	text-align: center;
 	font-size: 4rem;
 	color: var(--secondary-500);
 	background-color: var(--gray-100);
-	height: calc(100vh - 400px);
+	/* height: calc(100vh - 400px); */
 }
 .hero-service {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
@@ -32,9 +49,26 @@
 
 @media screen and (min-width: 800px) {
 	.hero {
-		height: 400px;
+		min-height: 400px;
 	}
 	.title {
 		font-size: 5rem;
+	}
+	.hero-info {
+		margin-left: 8rem;
+		padding-top: 1.5rem;
+		display: grid;
+		align-content: center;
+	}
+
+	.hero-info p {
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+	}
+	.pageTitle {
+		font-size: 3rem;
+	}
+	.page {
+		color: var(--gray-400);
 	}
 }

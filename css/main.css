@@ -263,6 +263,10 @@ Section services
 .icon:hover {
 	transform: scale(1.2);
 }
+
+.bg-img {
+	display: none;
+}
 /* =========================== 
 expertise
  =========================== */
@@ -331,24 +335,44 @@ media query
 	}
 	/* section about */
 	.section-center {
-		max-width: var(--max-width);
 		display: flex;
-		justify-content: space-between;
-		margin-left: auto;
-		margin-right: auto;
+		max-width: var(--max-width);
+		margin-inline: auto;
 	}
-	.about-info img {
-		max-width: 50%;
-		margin-right: 5rem;
-		border-radius: 5rem;
+	/* overlapping layout */
+	.overlap {
+		display: block;
+		position: relative;
 	}
+	.bg-img {
+		display: block;
+		height: 450px;
+		width: 600px;
+		background-color: var(--gray-200);
+		z-index: 1;
+	}
+
+	.img-info img {
+		display: block;
+		/* object-fit: cover; */
+		width: 100%;
+		height: 80%;
+		position: absolute;
+		top: 3rem;
+		left: 5rem;
+		z-index: 2;
+	}
+
 	/* services section */
+	.contact-info {
+		/* max-width: 500px; */
+		margin-left: 10rem;
+	}
 	.services-section {
 		max-width: var(--max-width);
 		display: flex;
 		justify-content: space-between;
-		margin-left: auto;
-		margin-right: auto;
+		margin-inline: auto;
 	}
 	.service {
 		border-right: 1px solid var(--gray-200);
@@ -358,7 +382,5 @@ media query
 		display: flex;
 		justify-content: center;
 		padding: 3rem 0;
-	}
-	.expert-info {
 	}
 }
