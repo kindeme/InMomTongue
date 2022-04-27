@@ -277,6 +277,9 @@ Section services
 	display: none;
 }
 
+iframe {
+	margin-top: 2rem;
+}
 /* =========================== 
 expertise
  =========================== */
@@ -385,8 +388,12 @@ media query
 		background-color: var(--gray-200);
 		z-index: 1;
 	}
+	iframe {
+		margin-top: 0;
+	}
 
-	.img-info img {
+	.img-info img,
+	.img-info iframe {
 		display: block;
 		/* object-fit: cover; */
 		width: 100%;
