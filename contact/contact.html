@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="../css/normalize.css" />
 		<link rel="stylesheet" href="../css/main.css" />
 		<link rel="stylesheet" href="../css/pagestyle.css" />
+		<link rel="stylesheet" href="../css/printStyle.css" />
 	</head>
 	<body>
 		<nav>
@@ -50,9 +51,45 @@
 			</div>
 		</section>
 		<main>
-			<p class="underContruction">Under construction</p>
+			<section class="section-center address-section">
+				<div class="address">
+					<i class="fa fa-phone icon" aria-hidden="true"></i>
+					<a href="tel:4045781162">404-578-1162</a>
+				</div>
+				<div class="address">
+					<i class="fa fa-envelope icon" aria-hidden="true"></i>
+
+					<a href="mailto: kindemekou@gmail.com"
+						>kindemekou@gmail.com</a
+					>
+				</div>
+				<div class="address">
+					<i class="fa fa-map-marker icon" aria-hidden="true"></i>
+					<p>Ashburn,VA</p>
+				</div>
+			</section>
+			<section class="contact-form">
+				<div class="form-container">
+					<form
+						class="form_contact"
+						id="form_contact"
+						action="submission.html"
+					>
+						<div class="large_control">
+							<div class="form_control">
+								<label for="firstName"> First Name</label>
+								<input type="text" id="firstName" />
+								<small> Error</small>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="contact_img_container">
+					<img src="../images/contact_img.jpg" alt="contact image" />
+				</div>
+			</section>
 		</main>
-		<footer class="footer">
+		<footer>
 			<p>All pictures are from https://www.pexels.com</p>
 			<p>
 				&copy; <span id="date"></span> In Mom Tongue Inspired by

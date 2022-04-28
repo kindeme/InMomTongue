@@ -1,0 +1,35 @@
+body {
+	color: black;
+	background-color: white;
+}
+p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+img {
+	display: none;
+}
+.icon {
+	color: black;
+	transform: 0;
+}
+.icon:hover {
+	transform: scale(1);
+}
+h1,
+h2,
+h3 {
+	page-break-after: avoid;
+}
+nav {
+	display: none;
+}
+
+footer {
+	text-align: center;
+}
+
+.hero-info,
+.page,
+.pageLink {
+	color: black;
+}

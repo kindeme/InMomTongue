@@ -216,7 +216,7 @@ Section about
 .about-info {
 	background-color: var(--gray-50);
 }
-.btn-conatct {
+.btn-contact {
 	display: inline-block;
 }
 .contact-text p:last-of-type {
@@ -310,7 +310,93 @@ expertise
 .about-team .img-info img {
 	margin-top: 2rem;
 }
+/* =========================== 
+About us Team
+ =========================== */
+.about-section .info-title {
+	text-align: center;
+}
 
+article {
+	position: relative;
+	border-radius: 10px;
+}
+article img {
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+}
+article div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-left: 1rem;
+	border-radius: 10px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.image-blur {
+	backdrop-filter: blur(5px);
+}
+article div > * {
+	transform: translateY(20px);
+	transition: transform 0.5s;
+}
+article div:hover > * {
+	transform: translateY(0px);
+}
+article div:hover {
+	opacity: 1;
+}
+.member-name {
+	font-size: 1.7em;
+	margin-bottom: 1em;
+}
+
+.member-title {
+	font-size: 1.25em;
+	margin-top: 0;
+}
+
+.team-gallery {
+	display: grid;
+	gap: 2rem;
+}
+
+/* =========================== 
+Contact page
+ =========================== */
+
+.address {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid var(--gray-200);
+	margin-bottom: 1rem;
+	align-items: center;
+	padding-block: 1rem;
+}
+.address:nth-child(3) {
+	border-bottom: 0;
+}
+.address a {
+	display: inline-block;
+	margin-top: 1em;
+	color: inherit;
+	margin-bottom: 0.5em;
+}
+.form-container {
+	background-color: var(--gray-100);
+}
+.contact_img_container {
+	display: block;
+}
 /* =========================== 
 footer
  =========================== */
@@ -455,5 +541,38 @@ media query
 	}
 	.about-team .about-services {
 		margin-right: 2rem;
+	}
+	.team-gallery {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.address-section {
+		display: flex;
+		justify-content: space-around;
+	}
+	.address {
+		border-bottom: 0;
+		border-right: 1px solid var(--gray-200);
+		border-left: 1px solid var(--gray-200);
+		/* padding-left: 3rem; */
+	}
+	.address:nth-child(2) {
+		padding-inline: 5rem;
+	}
+	.address:nth-child(1) {
+		border-right: 0;
+		padding-left: 7rem;
+	}
+	.address:nth-child(3) {
+		border-left: 0;
+		padding-right: 7rem;
+	}
+	.contact-form {
+		display: flex;
+		justify-content: space-between;
+	}
+	.form-container {
+		width: 50%;
 	}
 }
