@@ -69,27 +69,87 @@
 				</div>
 			</section>
 			<section class="contact-form">
-				<div class="form-container">
+				<div class="form-container contact-center">
+					<h3>Contact US</h3>
 					<form
 						class="form_contact"
 						id="form_contact"
 						action="submission.html"
+						method="get"
 					>
 						<div class="large_control">
 							<div class="form_control">
 								<label for="firstName"> First Name</label>
 								<input type="text" id="firstName" />
-								<small> Error</small>
+							</div>
+							<div class="form_control">
+								<label for="lastName"> Last Name</label>
+								<input type="text" id="lastName" />
 							</div>
 						</div>
+						<div class="large_control">
+							<div class="form_control">
+								<label for="email"> Email</label>
+								<input type="email" id="email" />
+							</div>
+							<div class="form_control">
+								<label for="phone"> Phone</label>
+								<input type="phone" id="phone" />
+							</div>
+						</div>
+						<div class="form_control">
+							<label for="message"> Your message</label>
+							<textarea name="message" id="message"></textarea>
+						</div>
+						<input
+							type="submit"
+							class="btn submit"
+							id="submit"
+							value=" SEND MESSAGE"
+						/>
 					</form>
-				</div>
-				<div class="contact_img_container">
-					<img src="../images/contact_img.jpg" alt="contact image" />
 				</div>
 			</section>
 		</main>
-		<footer>
+		<footer class="footer">
+			<div class="footer-information">
+				<div>
+					<h4>Quick Links</h4>
+					<ul class="footer-links">
+						<li>
+							<a href="../index.html">Home</a>
+						</li>
+						<li>
+							<a href="../services/service.html">Services</a>
+						</li>
+						<li>
+							<a href="../about/about.html">About</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Contact Information</h4>
+					<div>
+						<i class="fa fa-phone icon" aria-hidden="true"></i>
+						<a href="tel:4045781162">404-578-1162</a>
+					</div>
+					<div>
+						<i class="fa fa-envelope icon" aria-hidden="true"></i>
+
+						<a href="mailto: kindemekou@gmail.com"
+							>kindemekou@gmail.com</a
+						>
+					</div>
+					<div>
+						<i class="fa fa-map-marker icon" aria-hidden="true"></i>
+						<a href="#" id="city">Ashburn,VA</a>
+					</div>
+				</div>
+			</div>
+
 			<p>All pictures are from https://www.pexels.com</p>
 			<p>
 				&copy; <span id="date"></span> In Mom Tongue Inspired by
