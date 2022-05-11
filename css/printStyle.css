@@ -12,7 +12,7 @@ img {
 }
 .icon {
 	color: black;
-	transform: 0;
+	transform: none;
 }
 a {
 	color: black;

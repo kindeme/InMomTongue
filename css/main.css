@@ -31,7 +31,7 @@ html {
 	--letterSpacing: 1px;
 	--transition: 0.4s ease-in-out all;
 	--fixed-width: 600px;
-	--textColor: var(var(--gray-900));
+	--textColor: var(--gray-900);
 	--borderRadius: 0.25rem;
 	--backgroundColor: var(--gray-50);
 
@@ -126,14 +126,14 @@ Navbar
 	color: var(--primary-500);
 	transition: var(--transition);
 	cursor: pointer;
-	border-color: transparent;
+	border: none;
 	background-color: transparent;
 	font-size: 1.7rem;
 }
 .logo {
 	margin-bottom: 0;
 	margin-top: 0;
-	size: 20px;
+	font-size: 20px;
 }
 .quote {
 	display: none;
@@ -370,6 +370,12 @@ article div:hover {
 	gap: 2rem;
 }
 
+footer div p {
+	display: inline;
+}
+footer div {
+	margin-top: 0.5rem;
+}
 /* =========================== 
 Contact page
  =========================== */
@@ -437,8 +443,7 @@ textarea {
 	padding: 3rem 1rem;
 	margin-inline: auto;
 }
-.thank-section a {
-}
+
 /* =========================== 
 footer
  =========================== */
@@ -457,6 +462,13 @@ footer .icon {
 	font-size: 1.3rem;
 	color: var(--gray-50);
 	margin-right: 1rem;
+}
+footer div,
+footer p {
+	margin-left: 1rem;
+}
+.address p {
+	display: inline;
 }
 
 /* =
