@@ -1,6 +1,8 @@
 body {
 	color: black;
 	background-color: white;
+	max-width: 60%;
+	margin-inline: auto;
 }
 p {
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -11,6 +13,9 @@ img {
 .icon {
 	color: black;
 	transform: 0;
+}
+a {
+	color: black;
 }
 .icon:hover {
 	transform: scale(1);
@@ -32,4 +37,36 @@ footer {
 .page,
 .pageLink {
 	color: black;
+}
+input,
+textarea {
+	border: 2px solid var(--gray-200);
+}
+.form-container {
+	width: 100%;
+	background-color: transparent;
+}
+.submit {
+	background-color: black;
+}
+.submit:hover {
+	background-color: black;
+}
+.form_control span {
+	color: black;
+}
+@media screen and (min-width: 800px) {
+	.form-container {
+		padding-left: 0;
+	}
+	textarea {
+		width: 55%;
+	}
+	.submit {
+		width: 55%;
+	}
+	.form-container {
+		max-width: 50%;
+		margin-inline: auto;
+	}
 }
